@@ -20,13 +20,13 @@ Click [here](https://car-oil-change.herokuapp.com/best-price) to visit the websi
 
 ## Visual Overview
 
-1. Click [here]() to view a Google Slides summary of the project.
+1. Click [here](https://docs.google.com/presentation/d/1uz9pULlXe64jiOPsrmo4pRxozi-I4uf_j6FqUU1p024/edit?usp=sharing) to view a Google Slides summary of the project.
 
 2. A short but in-depth video where the author speaks on the different features of the website.
 
-   []()
+   [here]()
 
-3. Finally click [here]() to view the design documentation of the project.
+3. Finally click [here](https://drive.google.com/file/d/1HAB0rz4Ff7s4YaJs1JWykUuFVyndvRp5/view?usp=share_link) to view the design documentation of the project.
 
 ## Contributing
 
