@@ -3,6 +3,23 @@
 const {UsersService} = require("./users.service");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+
+// The separation of concern using controllers and services is nice to have.
+// But it seems like some of your controller logic actually belongs to services.
+// And you have database CRUD logic in your service.
+// I would suggest reorganize your code this way:
+// 1. Move database logic to another layer called "DAO" which is database access object.
+// 2. Your service should handle logic that requires multiple database access. For example
+//    you can have a service method called signUp(), and move your logic of checking old
+//    users and creating new users to the service.
+// At the end, this is the optimal layout:
+// Controllers should know nothing about business logic, its main concern should be handling
+// requests and calling the corresponding services, and return the result based on the result
+// from the service call. And services should be all about business logic, without having to
+// know whether the request comes from http or the underlying database is mongo. The DAOs
+// should be all about database logic, with simple functions like addBooking, getBookingById,
+// getBookingByUser, etc.
+// In the long run the code will be more maintainable.
 class UsersController {
   constructor() {}
 
