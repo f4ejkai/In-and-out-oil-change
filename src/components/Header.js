@@ -17,6 +17,7 @@ export const Header = () => {
         onClick={() => navigate('best-price')}
         className={`btn ${pathname === '/best-price' ? 'btn-info text-white' : 'btn-outline-light'} me-2`}>Our Best Price</button>
       {authed && (
+        //  not sure about using am empty tag name. Maybe use div?
         <>
           <button onClick={() => navigate('/bookings')} className={`btn btn-text ${pathname === '/bookings' ? 'text-info' : 'text-white'}`}>My Bookings</button>
           <button onClick={() => {

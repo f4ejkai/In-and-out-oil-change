@@ -38,3 +38,6 @@ export const Home = () => {
     </main>
   )
 }
+// Suggestions for your components:
+// 1. add PropType
+// 2. file name should be the same as the component name.
